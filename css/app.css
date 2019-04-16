@@ -226,7 +226,7 @@ header nav ul li a.active{
 /* specialties start here */
 #specialties{
     padding: 10px;
-    /* background-color: #666666; */
+    background-color: #c0dbf6;
 }
 .mySpecialties{
     margin-top: 10px;
@@ -238,6 +238,30 @@ header nav ul li a.active{
     background-color: #2196f3;
     box-shadow: 0 1px 5px rgba(104,104,104,0.8);
 }
+
+.mySpecialties h1{
+    padding-top: 15px;
+}
+
+.wrapp-all-the-specialties{
+    margin-top: 15px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+    display: flex;
+}
+.specialties{
+    flex: 1;
+    text-align: center;
+}
+.specialties h4{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+
+
 
 /* smooth scroll to top */
 #myBtn {
@@ -262,3 +286,4 @@ header nav ul li a.active{
 #myBtn:hover .fa{
     color: #2196f3;
 }
+/* end of scroll to top */
