@@ -244,24 +244,39 @@ header nav ul li a.active{
 }
 
 .wrapp-all-the-specialties{
-    margin-top: 15px;
+    margin: 30px 50px 0 50px;
     padding: 20px;
     background-color: #f7f7f7;
     box-shadow: 0 1px 5px rgba(104,104,104,0.8);
     display: flex;
 }
+
 .specialties{
     flex: 1;
     text-align: center;
 }
+
 .specialties h4{
+    margin-top: 15px;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: bold;
 }
 
+.specialties .services-box-icon .fa{
+    border: 1px solid #2196f3;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 2px rgba(104,104,104,0.8);
+}
+.specialties .services-box-icon{
+    padding: 10px;
+}
 
-
+.specialties p {
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
 
 /* smooth scroll to top */
 #myBtn {
