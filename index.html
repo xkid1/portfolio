@@ -20,18 +20,26 @@
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">    
+
+
     <title>Elmer T. Alluad Jr.</title>
 </head>
 <body id="page-top">
-       
+
+        <div id="load"></div>
+        <div id="contents">
         <!-- Navbar -->.
         <header>
             <div class="logo">Elmer T. Alluad jr.</div>
             <nav>
                 <ul>
-                    <li><a href="#page-top" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#">Specialties</a></li>
+                    <li><a href="#page-top" class="active js-scroll-trigger">Home</a></li>
+                    <li><a href="#about" class="js-scroll-trigger">About</a></li>
+                    <li><a href="#specialties" class="js-scroll-trigger">Specialties</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">Contact</a></li>
@@ -40,7 +48,7 @@
             <div class="menu-toggle"><i class="fa fa-bars"></i></div>
         </header>
 
-        <section>
+        <section id="firstSection">
             <div class="wrap-all-the-section">
                     <div><h1>Hi, I'm Elmer!</h1></div>
                     <div><h2>Full Stack Developer</h2></div>
@@ -48,6 +56,7 @@
             </div>
         </section>
 
+        <!-- article start here -->
         <article id="about">
             <div class="about-me">
                 <span><i class="fa fa-user fa-2x" style="color: #ffffff;"></i></span>
@@ -70,33 +79,73 @@
                 </div>
 
                 <div class="about">
-                    <div class="experience">
+                    <div class="experience" id="experience">
                         <i class="fa fa-globe fa-2x" style="color:#666666;"></i>
                         <div class="number">4</div>
                         <p>Company worked in</p>
                     </div>
 
-                    <div class="experience">
+                    <div class="experience" id="experience" >
                         <i class="fa fa-cloud fa-2x" style="color:#666666;"></i>
                         <div class="number">5</div>
                         <p>Years of Experience</p>
                     </div>
 
-                    <div class="experience">
+                    <div class="experience" id="experience">
                         <i class="fa fa-linux fa-2x" style="color:#666666;"></i>
                         <div class="number">5</div>
                         <p>Years of Open Source</p>
                     </div>
                 </div>
             </div>
-        </article>
+        </article> <!-- end of first article -->
+
+        <!-- section specialties start here -->
+        <section id="specialties">
+            <div class="mySpecialties">
+                <span class="fa fa-desktop fa-2x" style="color: #ffffff;"></span>
+                <h1>- MY <span style="background-color: rgba(59,63,80,0.6); border-radius: 5px; padding: 5px;">SPECIALTIES</span>-</h1>
+            </div>
+            <div class="wrapp-all-the-specialties">
+                <div class="specialties">
+                    <h4>FULL STACK DEVELOPMENT</h4>
+                    <div class="services-box-icon"><i style="color:#838590;" class="fa fa-html5 fa-3x"></i></div>
+                    <p>Responsive web apps developed with JAVASCRIPT, PHP, CSS, JQUERY, BOOTSTRPA, AJAX and pure HTML5</p>
+                </div>
+
+                <div class="specialties">
+                    <h4>SOFTWARE DEVELOPMENT</h4>
+                    <div class="services-box-icon"><i style="color:#838590;" class="fa fa-desktop fa-3x"></i></div>
+                    <p>Windows application developed with C#.net, VB.net</p>
+                </div>
+
+                <div class="specialties">
+                    <h4>SERVER DEVELOPMENT</h4>
+                    <div class="services-box-icon"><i style="color:#838590;" class="fa fa-server fa-3x"></i></div>
+                    <p>Server developed with MYSQL, MSMSQL, LAMP</p>
+                </div>
+            </div>
+        </section> <!-- section specialties end here -->
+
+
+        <!-- smooth scrool return to Top -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+        
+        
+
+
+    </div> <!-- end of the content of loader -->
+        
 
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- scroll reveal core -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- Core for the javascript -->
     <script src="js/app.js"></script>

@@ -3,7 +3,16 @@ body{
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
+#load{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background:url("/img/gif/126.gif") no-repeat center center rgba(0,0,0,0.25);
+    background-color: #fff;
+}
 
+/* Start here styling of navagition bar */
 header{
     position: absolute;
     top: 0;
@@ -89,9 +98,10 @@ header nav ul li a.active{
     header nav ul li a {
         border-bottom: 1px solid rgba(0,0,0,.2);
     }
-}
+} /* End of the navagition bar */
 
-section{
+/* Start of the first section to style */
+#firstSection{
     height: 100vh;
     width: 100%;
     background-image: url("../img/headingLogo/headerImages.jpg");
@@ -102,12 +112,14 @@ section{
 }
 
 .wrap-all-the-section{
- text-align: center;
- padding-top: 250px;
- margin: 0 auto;
-}
+    color: #f7f7f7;
+    text-align: center;
+    padding-top: 250px;
+    margin: 0 auto;
+    font-family: 'Tangerine', 'Montserrat', sans-serif;
+} /* end of the style of first sectio */
 
-/* myArticle */
+/* start of the myArticle style */
 .about img{
     margin-top: 10px;
     border-radius: 50%;
@@ -209,4 +221,44 @@ section{
     .about-me{
         display: none;
     }
+} /* end of the myArticle style */
+
+/* specialties start here */
+#specialties{
+    padding: 10px;
+    /* background-color: #666666; */
+}
+.mySpecialties{
+    margin-top: 10px;
+    text-align: center;
+}
+.mySpecialties .fa{
+    padding: 25px;
+    border-radius: 50%;
+    background-color: #2196f3;
+    box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+}
+
+/* smooth scroll to top */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #2196f3;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+  
+#myBtn:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#myBtn:hover .fa{
+    color: #2196f3;
 }
