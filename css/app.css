@@ -120,13 +120,6 @@ header nav ul li a.active{
 } /* end of the style of first sectio */
 
 /* start of the myArticle style */
-.about img{
-    margin-top: 10px;
-    border-radius: 50%;
-    height: 180px;
-    width: 180px;
-    box-shadow: 0 1px 5px rgba(104,104,104,0.8);
-}
 
 .about-me{
     margin-top: 10px;
@@ -153,7 +146,7 @@ header nav ul li a.active{
 
 .about{
     padding: 10px;
-    box-sizing: border-box;
+
 }
 
 .about:nth-child(1){
