@@ -4,12 +4,27 @@ $(document).ready(function(){
     $('nav').toggleClass('active')
   });//end of toggle me
 
-
+  // ===== Scroll to Top ==== 
+  $(window).scroll(function() {
+    if ($(this).scrollTop() >= 600) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+  });
+  $('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+  });
 
 });//end of jquery
 
 
+  
 
+
+//load the page first page first
 document.onreadystatechange = function () {
   var state = document.readyState
   if (state == 'interactive') {
@@ -19,30 +34,16 @@ document.onreadystatechange = function () {
          document.getElementById('interactive');
          document.getElementById('load').style.visibility="hidden";
          document.getElementById('contents').style.visibility="visible";
-      },2000);
+      },1000);
   }
 } //end of the loader of the page
 
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-    document.getElementById("myBtn").style.display = "block";
-  } else {
-    document.getElementById("myBtn").style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {  
-  document.body.scrollTop = 1;
-  document.documentElement.scrollTop = 1;
-}
-
 
 // animateCSS('.my-element', 'bounce')
+
+
+
 
 // scroll reveal when the user is scroll down
 ScrollReveal().reveal('.about-me', {
