@@ -109,15 +109,19 @@ header nav ul li a.active{
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    display: flex;
 }
 
 .wrap-all-the-section{
+    margin: auto;
+}
+
+.center-me{
     color: #f7f7f7;
     text-align: center;
-    padding-top: 250px;
-    margin: 0 auto;
     font-family: 'Tangerine', 'Montserrat', sans-serif;
-} /* end of the style of first sectio */
+    font-size: 25px;
+}/* end of the style of first sectio */
 
 /* start of the myArticle style */
 
@@ -134,7 +138,7 @@ header nav ul li a.active{
 }
 
 .wrapper-all-the-content{
-    margin-top: 10px;
+    margin: 10px;
 }
 @media(min-width: 1055px){
     .wrapper-all-the-content{
@@ -146,7 +150,6 @@ header nav ul li a.active{
 
 .about{
     padding: 10px 0 0 0;
-
 }
 
 .about:nth-child(1){
@@ -282,15 +285,18 @@ header nav ul li a.active{
        display: flex;
        justify-content: space-between;
     }
- }
+} 
+/* specialties end here */
 
- .prog-logo {
-     margin: 50px auto 0;
- }
- .all-logo img{
+
+.all-logo img{
     height: 90px;
     padding: 15px;
- }
+}
+
+
+
+
 /* smooth scroll to top */
 #return-to-top {
     position: fixed;
@@ -305,7 +311,7 @@ header nav ul li a.active{
     -webkit-border-radius: 35px;
     -moz-border-radius: 35px;
     border-radius: 35px;
-    /* display: none; */
+    display: none;
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
@@ -333,3 +339,53 @@ header nav ul li a.active{
     top: 5px;
 }
 /* end of scroll to top */
+
+/* MyFooter */
+footer {
+    background: #262626;
+    height: 170px;
+}
+
+.myfooter-name{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+}
+
+.myfooter-name p{
+    flex: 1;
+    color: #fff;
+}
+
+.myfooter ul {
+    padding-top: 30px;
+    list-style: none;
+    text-align: center;
+}
+
+.myfooter ul li {
+    display: inline-flex;
+}
+
+.myfooter a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: #2c3e50;
+    color: white;
+    margin: 0 5px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+.myfooter a:hover{
+    background: #e67e22;
+    text-decoration: none;
+}
+
+.myfooter a:hover > i {
+    transform:  scale(1.6) rotate(25deg);
+}
