@@ -46,7 +46,7 @@ $(document).ready(function(){
 
 
 //load the page first page first
-/*
+
 document.onreadystatechange = function () {
   var state = document.readyState
   if (state == 'interactive') {
@@ -60,7 +60,6 @@ document.onreadystatechange = function () {
   }
 } //end of the loader of the page
 
-*/
 
 // animateCSS('.my-element', 'bounce')
 

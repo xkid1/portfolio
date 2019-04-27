@@ -1,4 +1,3 @@
-/*  
 #load{
     width:100%;
     height:100%;
@@ -8,7 +7,6 @@
     background-color: #fff;
 }
 
-*/
 body{
     margin: 0;
     padding: 0;
@@ -131,10 +129,6 @@ nav ul li.active a{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-<<<<<<< HEAD
-=======
-    background-attachment: fixed;
->>>>>>> d2e2b0d14a40293894152cc5fc64635f375ab0c5
     display: flex;
 }
 
@@ -145,16 +139,10 @@ nav ul li.active a{
 .center-me{
     color: #f7f7f7;
     text-align: center;
-<<<<<<< HEAD
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     line-height: 1.6em;
 }
-=======
-    font-family: 'Tangerine', 'Montserrat', sans-serif;
-    font-size: 25px;
-}/* end of the style of first sectio */
->>>>>>> d2e2b0d14a40293894152cc5fc64635f375ab0c5
 
 .center-me h1{
     position: relative;
@@ -251,13 +239,8 @@ nav ul li.active a{
     box-shadow: 0 1px 5px rgba(104,104,104,0.8);
 }
 
-<<<<<<< HEAD
 #about{
     display: block;
-=======
-.wrapper-all-the-content{
-    margin: 10px;
->>>>>>> d2e2b0d14a40293894152cc5fc64635f375ab0c5
 }
 
 @media(min-width: 1055px){
@@ -271,35 +254,7 @@ nav ul li.active a{
 }
 
 .about{
-<<<<<<< HEAD
     margin-top: 20px;
-=======
-    padding: 10px 0 0 0;
-}
-
-.about:nth-child(1){
-    text-align: center;
-}
-.about:nth-child(1) p{
-    margin-top: 10px;
-    height: 10px;
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 20x;
-}
-
-.about:nth-child(1) .link{
-    margin-top: 25px;
-}
-
-.about:nth-child(1) a{
-    text-decoration: none;
-    color: #2196f3;
-    border: 1px solid #2196f3;
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif; 
-    padding: 10px;
-    border-radius: 5px;
->>>>>>> d2e2b0d14a40293894152cc5fc64635f375ab0c5
 }
 
 .about.parag {
@@ -395,7 +350,6 @@ nav ul li.active a{
     .wrapp-all-the-specialties{
        display: flex;
     }
-<<<<<<< HEAD
     .specialties{
         margin: 0 15px;
     }
@@ -444,16 +398,6 @@ nav ul li.active a{
 
 */
 
-=======
-} 
-/* specialties end here */
-
-
-.all-logo img{
-    height: 90px;
-    padding: 15px;
-}
->>>>>>> d2e2b0d14a40293894152cc5fc64635f375ab0c5
 
 
 
@@ -504,7 +448,6 @@ nav ul li.active a{
 /* MyFooter */
 footer {
     background: #262626;
-<<<<<<< HEAD
     width: 100%;
     height: 100x;
 }
@@ -518,9 +461,6 @@ footer {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-=======
-    height: 170px;
->>>>>>> d2e2b0d14a40293894152cc5fc64635f375ab0c5
 }
 
 .myfooter-name{
@@ -535,11 +475,7 @@ footer {
 }
 
 .myfooter ul {
-<<<<<<< HEAD
     padding-top: 10px;
-=======
-    padding-top: 30px;
->>>>>>> d2e2b0d14a40293894152cc5fc64635f375ab0c5
     list-style: none;
     text-align: center;
 }
@@ -548,13 +484,10 @@ footer {
     display: inline-flex;
 }
 
-<<<<<<< HEAD
 .myfooter .fa {
     color: #2196f3;
 }
 
-=======
->>>>>>> d2e2b0d14a40293894152cc5fc64635f375ab0c5
 .myfooter a{
     display: inline-flex;
     width: 40px;
@@ -570,23 +503,16 @@ footer {
 }
 
 .myfooter a:hover{
-<<<<<<< HEAD
     background: white;
-=======
-    background: #e67e22;
->>>>>>> d2e2b0d14a40293894152cc5fc64635f375ab0c5
     text-decoration: none;
 }
 
 .myfooter a:hover > i {
     transform:  scale(1.6) rotate(25deg);
-<<<<<<< HEAD
 }
 @media(max-width: 729px){
     .myfooter-name p{
       font: 10px;
       margin: 0 15px;
     }
-=======
->>>>>>> d2e2b0d14a40293894152cc5fc64635f375ab0c5
 }
