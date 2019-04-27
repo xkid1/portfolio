@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/app.css">
 
     <!-- myFavIcon -->
-    <link rel="shortcut icon" type="image/png" href="img/myLogo/logo.png">
+    <link rel="shortcut icon" type="image/png" href="img/myLogo/new-logo.png">
 
     <!-- Custom fonts for this template -->
     <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -32,17 +32,18 @@
 
         <div id="load"></div>
         <div id="contents">
-        <!-- Navbar -->.
+        <!-- Navbar -->
         <header>
-            <div class="logo">Elmer T. Alluad jr.</div>
+            <div class="logo"><img src="img/myLogo/new-logo.png"></div>
+            <span class="my-name"><p>Elmer T. Alluad Jr.</p></span>
             <nav>
                 <ul>
-                    <li><a href="#page-top" class="active js-scroll-trigger">Home</a></li>
+                    <li class="active"><a href="#page-top" class="js-scroll-trigger">Home</a></li>
                     <li><a href="#about" class="js-scroll-trigger">About</a></li>
                     <li><a href="#specialties" class="js-scroll-trigger">Specialties</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#portfolio" class="js-scroll-trigger">Portfolio</a></li>
+                    <li><a href="#skills" class="js-scroll-trigger">Skills</a></li>
+                    <li><a href="#contact" class="js-scroll-trigger">Contact</a></li>
                 </ul>
             </nav>
             <div class="menu-toggle"><i class="fa fa-bars"></i></div>
@@ -50,9 +51,12 @@
 
         <section id="firstSection">
             <div class="wrap-all-the-section">
-                    <div><h1>Hi, I'm Elmer!</h1></div>
-                    <div><h2>Full Stack Developer</h2></div>
-                    <div><h1>Your everything you need</h1></div>
+                <div class="center-me">
+                    <h1>Hi, I'm Elmer!</h1>
+                    <h2>Full Stack Developer</h2>
+                    <p>Your everything you need</p>
+                    <div class="logo-animation"><img src="img/myLogo/design.png"></div>
+                </div>
             </div>
         </section>
 
@@ -68,9 +72,13 @@
                 <div class="about LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="elmer-alluad"><a class="LI-simple-link" href='https://ph.linkedin.com/in/elmer-alluad?trk=profile-badge'>Elmer Alluad</a></div>
 
                 <div class="about parag">
-                    <p>Great things are done by a series of small things.</p>
+                    <p><q>Great things are done by a series of small things</q></p>
                     <p>I’m an Pilipino full stack developer who’s worked as a freelancer since the late 2015’s. I’ve live in Laguna during most of my career barring five incredible years in Calamba City, Laguna. Nowadays I live in Urdaneta City, Pangasinan.</p>
-                    <p>I’ve been full stack developer my entire career.</p>
+                    <p>Experienced in Wordpress. Working with various plugins and widgets, customization according to client requirements.</p>
+                    <p>My Full Stack Developer Service:</p>
+                    <p>- Creating responsive, mobile friendly themes.</p>
+                    <p>- Fixing issues on a broken website.</p>
+                    <p>- New website building from scratch.</p>
                 </div>
 
                 <div class="about">
@@ -120,33 +128,73 @@
                     <p>Server developed with MYSQL, MSMSQL, LAMP</p>
                 </div>
             </div>
+            <div class="program-logo">
+                <div class="left"></div>
+                <span><img src=""></span>
+                <div class="right"></div>
+            </div>
+        </section><!-- section specialties end here -->
 
-            <div class="prog-logo">
-                <!-- <div class="all-logo">
-                    <span><img src="img/progLogo/html5-css-js.png"></span>
-                    <span><img src="img/progLogo/php.png"></span>
-                    <span><img src="img/progLogo/jquery.png"></span>
-                    <span><img src="img/progLogo/bootstrap.png"></span>
+        <!-- section project portfolio start here -->
+        <section id="portfolio">
+            <div class="my-portfolio">
+                <span class="fa fa-briefcase fa-2x" style="color: #ffffff;"></span>
+                <h1>- PROJECT <span style="background-color: rgba(59,63,80,0.6); border-radius: 5px; padding: 5px;">PORTFOLIO</span>-</h1>
+            </div>
+            <div class="company-design">
+                <div class="company-finish-product">
+                   <img src="img/myproject/tipstersportal.JPG" >
+                   <img src="img/myproject/ibewinner.JPG">
+                    <img src="img/myproject/login.jpg">
+                    <img src="img/myproject/me.PNG">
+                    <img src="img/myproject/inventory.jpg">
+                    <img src="img/myproject/personal.jpg">
+                    <img src="img/myproject/personalData.jpg">
                 </div>
-
-                <div>
-                    <span><img src="img/progLogo/c-sharp.png"></span>
-                    <span><img src="img/progLogo/dot-net.png"></span>
-                    <span><img src="img/progLogo/git.png"></span>
-                    <span><img src="img/progLogo/github.png"></span>
-                </div>
-
-                <div>
-                    <span> <img src="img/progLogo/mysql.png"></span>
-                    <span><img src="img/progLogo/mssql-server.png" ></span>
-                    <span><img src="img/progLogo/lamp-logo.png"></span>
-                    <span><img src="img/progLogo/linux.png"></span>
-                    <span><img src="img/progLogo/wordpress-1.png" ></span>
-                </div> -->
-              
+                
             </div>
 
-        </section> <!-- section specialties end here -->
+        </section> <!-- section project portfolio end here -->
+
+        <!-- section project skills start here -->
+        <!-- <section id="skills">
+            <div class="my-skills">
+                <span class="fa fa-book fa-2x" style="color: #ffffff;"></span>
+                <h1>- HARD <span style="background-color: rgba(59,63,80,0.6); border-radius: 5px; padding: 5px;">SKILLS</span>-</h1>
+            </div>
+        </section>section project skills end here -->
+
+        <!-- section project contact start here -->
+        <!-- <section id="contact">
+            <div class="my-contact">
+                <span class="fa fa-phone fa-2x" style="color: #ffffff;"></span>
+                <h1>- CONTACT <span style="background-color: rgba(59,63,80,0.6); border-radius: 5px; padding: 5px;">INFO</span>-</h1>
+            </div>
+        </section>section project contact end here -->
+
+        <footer>
+            <div class="myfooter">
+                <div class="footlogo"><img src="img/myLogo/new-logo.png"></div>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/Vkings.io" target="blank"><i class="fa fa-facebook-f"></i></a> 
+                    </li>
+                    <li>
+                        <a href="https://github.com/vkings1" target="blank"><i class="fa fa-github"></i></a>
+                    </li>
+                    <li>
+                    <a href="https://twitter.com/vkings_io" target="blank"><i class="fa fa-twitter"></i></a> 
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/dashboard?o=U" target="blank"><i class="fa fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/elmer-alluad/" target="blank"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+                    <span class="myfooter-name"><p>Copyright &copy 2019 Elmer T. Alluad Jr. | All Rights Reserved.</p></span>
+            </div>
+         </footer>
 
         <!-- smooth scrool return to Top -->
         <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>

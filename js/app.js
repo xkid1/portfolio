@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  $('a.js-scroll-triggers').on('click', function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -14,9 +14,18 @@ $(document).ready(function(){
     }
   }); //end of scroll down
 
- //start of menu toggle
+  
+   //add remove active class in ul li
+   $(document).on('click', 'ul li', function(){
+    $(this).addClass('active').siblings().removeClass('active')
+  });
+
+
+    //start of menu toggle
   $('.menu-toggle').click(function(){
-    $('nav').toggleClass('active')
+    var nav = document.getElementsByTagName('nav');
+     $('nav').toggleClass('active')
+   
   });//end of toggle me
 
   // ===== Scroll to Top ==== 
@@ -36,10 +45,8 @@ $(document).ready(function(){
 });//end of jquery
 
 
-  
-
-
 //load the page first page first
+/*
 document.onreadystatechange = function () {
   var state = document.readyState
   if (state == 'interactive') {
@@ -53,7 +60,7 @@ document.onreadystatechange = function () {
   }
 } //end of the loader of the page
 
-
+*/
 
 // animateCSS('.my-element', 'bounce')
 
@@ -62,16 +69,24 @@ document.onreadystatechange = function () {
 
 // scroll reveal when the user is scroll down
 ScrollReveal().reveal('.about-me', {
-  origin: 'top',
-  distance: '',
-  duration: 3000,
-  scalle: 0.5
+  origin: 'bottom',
+  distance: '250px',
+  duration: 2000,
+  // scalle: 0.5
 });
 ScrollReveal().reveal('.about', {
-  origin: 'top',
-  distance: '',
+  origin: 'left',
+  distance: '250px',
+  duration: 6000,
+  // scalle: 0.5
+});
+ScrollReveal().reveal('.about.parag', {
+  origin: 'bottom',
+  distance: '250px',
   duration: 3000
 });
 ScrollReveal().reveal('#experience', {
-  delay: 1000
+  delay: 2000,
+  distance: '100px',
+  origin: 'right'
 }, 1000);
