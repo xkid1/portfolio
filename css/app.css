@@ -365,9 +365,6 @@ nav ul li.active a{
 } 
 /* specialties end here */
 
-
-
-
 /* section project portfolio start here */
 #portfolio{
     background-color: #DDDDDD;
@@ -388,8 +385,34 @@ nav ul li.active a{
 }
 
 .company-design{
-    border: 1px solid red;
-    /* margin: 70px 90px 0;  */
+    width: 100%;
+}
+
+.company-finish-product > div{
+    box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+    padding: 20px;
+    background-color: #fff;
+    
+    /* margin-left: 40px; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+@media(min-width: 1000px){
+    .company-finish-product{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1px;
+        justify-items: center;
+    }
+}
+.all-logo img{
+    box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 
