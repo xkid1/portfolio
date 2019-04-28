@@ -226,6 +226,7 @@ nav ul li.active a{
 }
 /* end of the style of first sectio */
 
+
 /* start of the myArticle style */
 .about-me{
     padding-top: 10px;
@@ -280,6 +281,7 @@ nav ul li.active a{
     box-shadow: 0 1px 5px rgba(104,104,104,0.8);
     padding: 15px 10px 0;
 }
+
 @media(max-width: 1044px){
     .about:nth-child(3){
         display: grid;
@@ -304,6 +306,7 @@ nav ul li.active a{
 /* specialties start here */
 #specialties{
     background-color: #c0dbf6;
+   
 }
 .mySpecialties{
     padding-top: 10px;
@@ -316,9 +319,11 @@ nav ul li.active a{
     background-color: #2196f3;
     box-shadow: 0 1px 5px rgba(104,104,104,0.8);
 }
+
 .mySpecialties h1{
     padding-top: 15px;
 }
+
 .wrapp-all-the-specialties{
     margin-top: 15px;
     margin-left: 30px;
@@ -328,6 +333,7 @@ nav ul li.active a{
     background-color: #f7f7f7;
     box-shadow: 0 1px 5px rgba(104,104,104,0.8);
 }
+
 .specialties{
     flex: 1;
     text-align: center;
@@ -335,17 +341,20 @@ nav ul li.active a{
     box-shadow: 0 1px 5px rgba(104,104,104,0.8);
     margin: 15px;
 }
+
 .specialties h4{
     margin-top: 15px;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
+
 .specialties p {
     padding: 10px 10px 0;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
+
 @media(min-width: 900px){
     .wrapp-all-the-specialties{
        display: flex;
@@ -354,11 +363,14 @@ nav ul li.active a{
         margin: 0 15px;
     }
 } 
+/* specialties end here */
+
+
+
 
 /* section project portfolio start here */
-
 #portfolio{
-    background-color: #f7f7f7;
+    background-color: #DDDDDD;
 }
 .my-portfolio{
     padding-top: 10px;
@@ -374,29 +386,11 @@ nav ul li.active a{
 .my-portfolio h1{
     padding-top: 15px;
 }
-/*
-.company-design{
-    padding-top: 10px;
-}
 
 .company-design{
-    display: flex;
-    flex-wrap: wrap;
-} 
-
-.company-design img{
-    border: 1px solid #2196f3;
-    box-shadow: 0 1px 5px rgba(104,104,104,0.8);
-    border-radius: 5px;
-    margin-top: 8px;
-    max-width: 25%; 
+    border: 1px solid red;
+    /* margin: 70px 90px 0;  */
 }
-.company-finish-product{
-    flex: 1;
-}
-
-
-*/
 
 
 
