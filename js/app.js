@@ -42,6 +42,7 @@ $(document).ready(function(){
     }, 500);
   }); //end of scroll to top
 
+
 });//end of jquery
 
 
@@ -82,10 +83,22 @@ ScrollReveal().reveal('.about', {
 ScrollReveal().reveal('.about.parag', {
   origin: 'bottom',
   distance: '250px',
-  duration: 3000
+  duration: 2000
 });
 ScrollReveal().reveal('#experience', {
   delay: 2000,
   distance: '100px',
   origin: 'right'
+}, 1000);
+
+ScrollReveal().reveal('.mySpecialties', {
+  origin: 'bottom',
+  distance: '250px',
+  duration: 2000,
+});
+
+ScrollReveal().reveal('#specialties-3', {
+  delay: 2000,
+  distance: '100px',
+  origin: 'bottom'
 }, 1000);
