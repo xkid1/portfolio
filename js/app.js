@@ -102,3 +102,15 @@ ScrollReveal().reveal('#specialties-3', {
   distance: '100px',
   origin: 'bottom'
 }, 1000);
+
+ScrollReveal().reveal('.my-portfolio', {
+  origin: 'bottom',
+  distance: '250px',
+  duration: 2000,
+});
+
+ScrollReveal().reveal('.all-logo', {
+  delay: 2000,
+  distance: '100px',
+  origin: 'bottom'
+}, 1000);
