@@ -402,7 +402,7 @@ nav ul li.active a{
     .company-finish-product{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1px;
+        grid-gap: 5px;
         justify-items: center;
     }
 }
@@ -413,9 +413,235 @@ nav ul li.active a{
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    
+
+}/*end of portfolio */
+
+
+/*start here for hard skills */
+.my-skills{
+    padding-top: 10px;
+    text-align: center;
 }
 
+.my-skills .fa{
+    padding: 25px;
+    border-radius: 50%;
+    background-color: #2196f3;
+    box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+}
+
+.my-skills h1{
+   padding-top: 10px;
+}
+.mySkills{
+    margin-top: 40px;
+}
+
+@media(min-width: 1024px){
+    .skills-wrapp{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+    }
+}
+
+.skills-wrapp{
+    text-align: center;
+}
+
+.web .chart{
+    position: relative;
+    right: 15px;
+}
+.web .percent{
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    position: relative;
+    left: 75px;
+    bottom: 50px;
+}
+.percent::after{
+    content: '%';
+}
+
+.we-1 h5{
+    padding-top: 10px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.web-p p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    padding: 0 10px 10px;
+}
+
+.wed-logo .fa{
+    border: 1px solid #262626;
+    padding: 10px;
+    font-size: 45px;
+    box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+}
+.wed-logo{
+    padding-bottom: 15px;
+}
+
+.data .chart{
+    position: relative;
+    right: 15px;
+}
+
+.data .percent{
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    position: relative;
+    left: 75px;
+    bottom: 50px;
+}
+
+.data-5 h5{
+    padding-top: 10px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.data-p p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    padding: 0 10px 10px;
+}
+
+.data-logo .fa{
+    border: 1px solid #262626;
+    padding: 12px;
+    font-size: 45px;
+    box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+    margin-top: 25px;
+}
+.cloud .chart{
+    position: relative;
+    right: 15px;
+}
+
+.cloud .percent{
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    position: relative;
+    left: 75px;
+    bottom: 50px;
+}
+
+.cloud-5 h5{
+    padding-top: 10px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.cloud-p p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    padding: 0 10px 10px;
+}
+
+.coud-logo .fa{
+    border: 1px solid #262626;
+    padding: 10px;
+    font-size: 45px;
+    box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+    /* position: relative;
+    top: 25px; */
+}
+
+.DevOps .chart{
+    position: relative;
+    right: 15px;
+}
+
+.DevOps .percent{
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    position: relative;
+    left: 75px;
+    bottom: 50px;
+}
+
+.DevOps-5 h5{
+    padding-top: 10px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.DevOps-p p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    padding: 0 10px 10px;
+}
+
+.DevOps-logo .fa{
+    border: 1px solid #262626;
+    padding: 10px;
+    font-size: 45px;
+    box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+    /* position: relative;
+    top: 25px; */
+}
+
+@media(max-width:1024px){
+    .we-1 h5{
+        margin-top: -10px;
+    }
+    .web-p p{
+        margin-top: -10px;
+    }
+    .wed-logo{
+        margin-top: -15px;
+    }
+
+    .data-5 h5{
+        margin-top: -10px;
+    }
+    .data-p p{
+        margin-top: -10px;
+    }
+    .data-logo{
+        margin-top: -39px;
+    }
+
+    .cloud{
+        margin-top: 15px;
+    }
+    .cloud-5 h5{
+        margin-top: -10px;
+    }
+    .cloud-p p{
+        margin-top: -10px;
+    }
+    .coud-logo{
+        margin-top: -18px;
+    }
+
+    .DevOps{
+        margin-top: 15px;
+    }
+    .DevOps-5 h5{
+        margin-top: -10px;
+    }
+    .DevOps-p p{
+        margin-top: -10px;
+    }
+    .DevOps-logo{
+       margin-bottom: 25px;
+       margin-top: -18px;
+    }
+} /* shard skills end here */
 
 
 
