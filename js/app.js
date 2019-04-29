@@ -42,6 +42,24 @@ $(document).ready(function(){
     }, 500);
   }); //end of scroll to top
 
+    //easy piechart for web
+    $('.chart').easyPieChart({
+      easing: 'easeOutBounce',
+      trackColor: '#f2f2f2',
+      size: 110,
+      animate: 3000,
+      barColor:'#2196f3',
+      scaleColor:false,
+      lineWidth: 7,
+      lineCap:'circle',
+      onStep: function(from, to, percent) {
+          $(this.el).find('.percent').text(Math.round(percent));
+      }
+      });
+    // var chart = window.chart = $('.chart').data('easyPieChart');
+    // $('.number-percent').on('click', function() {
+    //     chart.update(Math.min(40*2));
+    // });
 
 });//end of jquery
 
@@ -112,5 +130,17 @@ ScrollReveal().reveal('.my-portfolio', {
 ScrollReveal().reveal('.all-logo', {
   delay: 2000,
   distance: '100px',
+  origin: 'bottom'
+}, 1000);
+
+ScrollReveal().reveal('.my-skills', {
+  origin: 'bottom',
+  distance: '350px',
+  duration: 1000,
+});
+
+ScrollReveal().reveal('.skills-wrapp', {
+  delay: 2000,
+  distance: '150px',
   origin: 'bottom'
 }, 1000);
