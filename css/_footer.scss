@@ -1,0 +1,63 @@
+footer {
+    background: #262626;
+    width: 100%;
+    height: 100x;
+    .footlogo img {
+        height: 80px;
+        margin-top: 15px;
+     }
+     .footlogo{
+        display: table;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .myfooter-name{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+    }
+    .myfooter-name p{
+        flex: 1;
+        color: #fff;
+    }
+    .myfooter ul {
+        padding-top: 10px;
+        list-style: none;
+        text-align: center;
+    }
+    .myfooter ul li {
+        display: inline-flex;
+    }
+    
+    .myfooter .fa {
+        color: $primaryColor;
+    }
+    .myfooter a{
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        background: #2c3e50;
+        color: white;
+        margin: 0 5px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+        font-size: 20px;
+    }
+    .myfooter a:hover{
+        background: white;
+        text-decoration: none;
+    }
+    .myfooter a:hover > i {
+        transform:  scale(1.6) rotate(25deg);
+    }
+}
+
+@media(max-width: 729px){
+    .myfooter-name p{
+      font: 10px;
+      margin: 0 15px;
+    }
+}

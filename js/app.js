@@ -1,7 +1,8 @@
-$(document).ready(function(){
+(function($) {
+  "use strict";
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-triggers').on('click', function() {
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').on('click', function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -14,16 +15,38 @@ $(document).ready(function(){
     }
   }); //end of scroll down
 
-  
-   //add remove active class in ul li
-   $(document).on('click', 'ul li', function(){
-    $(this).addClass('active').siblings().removeClass('active')
+  // Closes responsive menu when a scroll trigger link is clicked
+  $('.js-scroll-trigger').click(function() {
+    $('.navbar-collapse').collapse('hide');
   });
+
+  // Activate scrollspy to add active class to navbar items on scroll
+  $('body').scrollspy({
+    target: '#mainNav',
+    offset: 75
+  });
+
+  // Collapse Navbar
+  var navbarCollapse = function() {
+    if ($("#mainNav").offset().top > 100) {
+      $("#mainNav").addClass("navbar-scrolled");
+    } else {
+      $("#mainNav").removeClass("navbar-scrolled");
+    }
+  };
+   // Collapse now if page is not at top
+   navbarCollapse();
+   // Collapse the navbar when page is scrolled
+   $(window).scroll(navbarCollapse);
+
+   //add remove active class in ul li
+  //  $(document).on('click', 'ul li', function(){
+  //   $(this).addClass('active').siblings().removeClass('active')
+  // });
 
 
     //start of menu toggle
   $('.menu-toggle').click(function(){
-    var nav = document.getElementsByTagName('nav');
      $('nav').toggleClass('active')
    
   });//end of toggle me
@@ -61,11 +84,25 @@ $(document).ready(function(){
     //     chart.update(Math.min(40*2));
     // });
 
-});//end of jquery
+    $('.git').animate({width: '88%'}, 2000);
+      $('.html').animate({width: '99.9%'}, 2000);
+      $('.css').animate({width: '95%'}, 2000);
+      $('.javascript').animate({width: '85%'}, 2000);
+      $('.php').animate({width: '97%'}, 2000);
+      $('.bootstrap').animate({width: '95%'}, 2000);
+      $('.jquery').animate({width: '95%'}, 2000);
+      $('.c-sharp').animate({width: '92%'}, 2000);
+      $('.vb').animate({width: '97%'}, 2000);
+      $('.sql').animate({width: '95%'}, 2000);
+      $('.linux').animate({width: '92%'}, 2000);
+      $('.lamp').animate({width: '90%'}, 2000);
+
+})(jQuery); // End of use strict
 
 
 //load the page first page first
 
+/*
 document.onreadystatechange = function () {
   var state = document.readyState
   if (state == 'interactive') {
@@ -79,11 +116,8 @@ document.onreadystatechange = function () {
   }
 } //end of the loader of the page
 
-
+*/
 // animateCSS('.my-element', 'bounce')
-
-
-
 
 // scroll reveal when the user is scroll down
 ScrollReveal().reveal('.about-me', {
