@@ -176,6 +176,15 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+#load {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  background: url("/img/gif/126.gif") no-repeat center center rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+
 .logo img {
   margin: 10px 30px;
   height: 80px;
@@ -576,7 +585,7 @@ footer .myfooter a:hover > i {
   .wrapper-all-the-content {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (3, 1fr);
+    -ms-grid-columns: repeat(3, 1fr);
         grid-template-columns: repeat(3, 1fr);
     grid-gap: 5px;
     text-align: center;
@@ -618,7 +627,7 @@ footer .myfooter a:hover > i {
   .about:nth-child(3) {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (3, 1fr);
+    -ms-grid-columns: repeat(3, 1fr);
         grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2px;
   }
@@ -747,7 +756,7 @@ footer .myfooter a:hover > i {
   .company-finish-product {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (2, 1fr);
+    -ms-grid-columns: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
     justify-items: center;
@@ -791,7 +800,7 @@ footer .myfooter a:hover > i {
   .skills-wrapp {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (4,1fr);
+    -ms-grid-columns: repeat(4, 1fr);
         grid-template-columns: repeat(4, 1fr);
     text-align: center;
   }
@@ -1007,7 +1016,7 @@ footer .myfooter a:hover > i {
   margin-left: 5rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (2,1fr);
+  -ms-grid-columns: repeat(2, 1fr);
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
 }
