@@ -1,15 +1,12 @@
-language: php
-- 5.5
-- 5.6
-
-before_script:
-  - psql -c "CREATE USER skateparks WITH PASSWORD 'skateparks';" -U postgres
-
-script:
-- vendor/bin/phpunit
-
-
-
-before_install:
-  - gem install rake
-
+install: ./install-dependencies.sh
+install:
+  - bundle install --path vendor/bundle
+  - npm install
+  install: true
+  script: bundle exec thor build
+  script:
+- bundle exec rake build
+- bundle exec rake builddoc
+script: bundle exec rake build && bundle exec rake builddoc
+deploy:
+  skip_cleanup: true
