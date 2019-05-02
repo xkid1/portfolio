@@ -7,3 +7,9 @@ before-script:
 
 script:
 - vendor/bin/phpunit
+
+
+
+before_install:
+  - gem install rake
+
