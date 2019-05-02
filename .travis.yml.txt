@@ -1,7 +1,0 @@
-language: html
-
-html:
--5
-
-before-script:
-composer install --no-interaction
