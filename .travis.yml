@@ -2,8 +2,8 @@ language: php
 - 5.5
 - 5.6
 
-before-script:
-- composer install --no-interaction
+before_script:
+  - psql -c "CREATE USER skateparks WITH PASSWORD 'skateparks';" -U postgres
 
 script:
 - vendor/bin/phpunit
