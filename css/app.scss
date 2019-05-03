@@ -11,7 +11,7 @@
 #firstSection{
     height: 100vh;
     width: 100%;
-    background-image: url("../img/headingLogo/headerImages.jpg");
+    background-image: url("../img/headingLogo/stock.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -24,7 +24,7 @@
 }
 
 .center-me{
-    color: #f7f7f7;
+    color: $secondaryColor;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
@@ -192,6 +192,7 @@
 /* specialties start here */
 #specialties{
     background-color: #c0dbf6;
+    padding-bottom: 50px;
    
 }
 .mySpecialties{
@@ -254,6 +255,7 @@
 /* section project portfolio start here */
 #portfolio{
     background-color: #DDDDDD;
+    padding-bottom: 50px;
 }
 .my-portfolio{
     padding-top: 10px;
@@ -303,6 +305,10 @@
 }/*end of portfolio */
 
 /*start here for hard skills */
+#skills{
+    background-color: $secondaryColor;
+    padding-bottom: 50px;
+}
 .my-skills{
     padding-top: 10px;
     text-align: center;
@@ -581,4 +587,48 @@
 .git, .html, .css, .javascript, .php, 
 .bootstrap, .jquery, .c-sharp, .vb, .sql, .linux, .lamp {
     background: #3d3d3d;
+}
+
+/*contact info */
+#contact{ 
+   margin-bottom: 50px;
+}
+
+.my-contact{
+    padding-top: 10px;
+    text-align: center;
+}
+.my-contact .fa{
+    padding: 25px;
+    border-radius: 50%;
+    background-color: $primaryColor;
+    box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+}
+
+.contact-info{
+    padding-top: 10px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.location .fa{
+    font-size: 20px;
+}
+.location .my-location{
+    font-size: 25px;  
+}
+.my-number .fa{
+    font-size: 25px;
+}    
+
+.my-number .my-number-contatc{
+    font-size: 25px;
+}
+.my-email .fa {
+    font-size: 25px;
+}
+.my-email .my-email-contact{
+    font-size: 25px; 
+    // position: relative;
+    // bottom: 7px;
 }

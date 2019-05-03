@@ -144,16 +144,16 @@ ScrollReveal().reveal('#experience', {
 }, 1000);
 
 ScrollReveal().reveal('.mySpecialties', {
+  delay: 1000,
   origin: 'bottom',
-  distance: '250px',
-  duration: 2000,
+  distance: '50px',
 });
 
 ScrollReveal().reveal('#specialties-3', {
   delay: 2000,
-  distance: '100px',
+  distance: '50px',
   origin: 'bottom'
-}, 1000);
+}, 2000);
 
 ScrollReveal().reveal('.my-portfolio', {
   origin: 'bottom',
@@ -163,18 +163,30 @@ ScrollReveal().reveal('.my-portfolio', {
 
 ScrollReveal().reveal('.all-logo', {
   delay: 2000,
-  distance: '100px',
+  distance: '50px',
   origin: 'bottom'
 }, 1000);
 
 ScrollReveal().reveal('.my-skills', {
-  origin: 'bottom',
-  distance: '350px',
-  duration: 1000,
+  delay: 1000,
+  distance: '50px',
+  origin: 'bottom'
 });
 
 ScrollReveal().reveal('.skills-wrapp', {
-  delay: 2000,
+  delay: 1000,
   distance: '150px',
   origin: 'bottom'
-}, 1000);
+}, 2000);
+
+ScrollReveal().reveal('.my-contact', {
+  delay: 1000,
+  distance: '50px',
+  origin: 'bottom'
+});
+
+ScrollReveal().reveal('.contact-info', {
+  delay: 1000,
+  distance: '150px',
+  origin: 'bottom'
+}, 2000);
