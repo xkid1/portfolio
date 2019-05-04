@@ -1128,4 +1128,13 @@ footer .myfooter a:hover > i {
 .my-email .my-email-contact {
   font-size: 25px;
 }
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
 /*# sourceMappingURL=app.css.map */
