@@ -1,13 +1,10 @@
-sudo: false
 language: node_js
-
 node_js:
-  - node
+- '4'
+script: make test
+before_script: make pretest
+after_script:  make clean
 
- install:
-  - npm ci
-
-  script:
-    - npm test
-
-    
+before_script:
+  - make pretest1
+  - make pretest2
