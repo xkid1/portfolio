@@ -1,23 +1,12 @@
-language: php
-php:
-  - '5.4'
-  - '5.6'
-  - '7.0'
-  - hhvm # on Trusty only
-  - nightly
+language: node_js
+node_js:
+- 'stable'
+script: make test
+before_script: make pretest
+after_script:  make clean
+  - "7"
 
-  before_script:
-  - curl -sSfL -o ~/.phpenv/versions/hhvm/bin/phpunit https://phar.phpunit.de/phpunit-5.7.phar
-
-  before_script: composer require atoum/atoum
-  script: vendor/bin/atoum
-
-install: php vendor/vendors.php
-
-install:
-  - ./bin/ci/install_dependencies.sh
-  - php vendor/vendors.php
-
-  env:
-  - SYMFONY_VERSION="2.0.*" DB=mysql
-  - SYMFONY_VERSION="dev-master" DB=mysql
+before_script:
+  
+  - make pretest2 
+  - npm install -g gulp-cli
