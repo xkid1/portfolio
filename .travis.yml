@@ -1,10 +1,7 @@
 language: node_js
 node_js:
-- '4'
-script: make test
-before_script: make pretest
-after_script:  make clean
+  - "7"
 
 before_script:
-  - make pretest1
-  - make pretest2
+  - npm install -g gulp-cli
+script: gulp
