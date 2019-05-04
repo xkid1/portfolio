@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - 11.6.0
+  - "11"
   cache: yarn
 
   install:
@@ -15,4 +15,4 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   on:
-    brach: gh-pages
+    brach: master
