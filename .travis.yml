@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - "11"
-  
+
   cache: yarn
 
   install:
@@ -15,5 +15,6 @@ deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
+  local_dir: build
   on:
     brach: master
