@@ -1,19 +1,10 @@
-language: php
-php:
-  - 7.1.9
+language: java
 
-  php
-  - hhvm-3.18
-  - hhvm-nightly
+jdk:
+  - oraclejdk8
+  - openjdk7
+  - openjdk11
 
-  before_script:
-  - curl -sSfL -o ~/.phpenv/versions/hhvm/bin/phpunit https://phar.phpunit.de/phpunit-5.7.phar
-
-  before_script: composer require atoum/atoum
-  script: vendor/bin/atoum
-
-  install: php vendor/vendors.php
-
-  install:
-  - ./bin/ci/install_dependencies.sh
-  - php vendor/vendors.php
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq fonts-liberation
