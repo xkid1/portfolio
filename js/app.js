@@ -45,11 +45,11 @@
   // });
 
 
-    //start of menu toggle
-  $('.menu-toggle').click(function(){
-     $('nav').toggleClass('active')
+  //   //start of menu toggle
+  // $('.menu-toggle').click(function(){
+  //    $('nav').toggleClass('active')
    
-  });//end of toggle me
+  // });//end of toggle me
 
   // ===== Scroll to Top ==== 
   $(window).scroll(function() {
@@ -84,25 +84,23 @@
     //     chart.update(Math.min(40*2));
     // });
 
-    $('.git').animate({width: '88%'}, 2000);
-      $('.html').animate({width: '99.9%'}, 2000);
-      $('.css').animate({width: '95%'}, 2000);
-      $('.javascript').animate({width: '85%'}, 2000);
-      $('.php').animate({width: '97%'}, 2000);
-      $('.bootstrap').animate({width: '95%'}, 2000);
-      $('.jquery').animate({width: '95%'}, 2000);
-      $('.c-sharp').animate({width: '92%'}, 2000);
-      $('.vb').animate({width: '97%'}, 2000);
-      $('.sql').animate({width: '95%'}, 2000);
-      $('.linux').animate({width: '92%'}, 2000);
-      $('.lamp').animate({width: '90%'}, 2000);
+    // $('.git').animate({width: '88%'}, 2000);
+    //   $('.html').animate({width: '99.9%'}, 2000);
+    //   $('.css').animate({width: '95%'}, 2000);
+    //   $('.javascript').animate({width: '85%'}, 2000);
+    //   $('.php').animate({width: '97%'}, 2000);
+    //   $('.bootstrap').animate({width: '95%'}, 2000);
+    //   $('.jquery').animate({width: '95%'}, 2000);
+    //   $('.c-sharp').animate({width: '92%'}, 2000);
+    //   $('.vb').animate({width: '97%'}, 2000);
+    //   $('.sql').animate({width: '95%'}, 2000);
+    //   $('.linux').animate({width: '92%'}, 2000);
+    //   $('.lamp').animate({width: '90%'}, 2000);
 
 })(jQuery); // End of use strict
 
 
 //load the page first page first
-
-
 document.onreadystatechange = function () {
   var state = document.readyState
   if (state == 'interactive') {
@@ -114,7 +112,7 @@ document.onreadystatechange = function () {
          document.getElementById('contents').style.visibility="visible";
       },1000);
   }
-} //end of the loader of the page
+}; //end of the loader of the page
 
 
 // animateCSS('.my-element', 'bounce')
