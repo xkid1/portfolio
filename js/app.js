@@ -188,3 +188,9 @@ ScrollReveal().reveal('.contact-info', {
   distance: '150px',
   origin: 'bottom'
 }, 2000);
+
+ScrollReveal().reveal('.google-map', {
+  delay: 1000,
+  distance: '150px',
+  origin: 'bottom'
+}, 2000);
