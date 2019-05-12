@@ -7,5 +7,5 @@
 
 Visit my portfolio here. https://vkings1.github.io
 
-<img src="img/screenshoots/elmer.png" width="100" height="100" >
+<img src="img/screenshoots/elmer.PNG" width="100" height="100" >
 
