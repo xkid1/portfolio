@@ -8,8 +8,8 @@
 Visit my portfolio here. https://vkings1.github.io
 
 <p>Desktop device</p>
-<span><img src="img/screenshoots/elmer.PNG" width="850" height="550" ></span>
+<span><img src="img/screenshoots/elmer.PNG" width="950" height="450" ></span>
 
 <p>Mobile device</p>
-<span><img src="img/screenshoots/elmer1.PNG" width="750" height="550" ></span>
+<span><img src="img/screenshoots/elmer1.png" width="750" height="550" ></span>
 
