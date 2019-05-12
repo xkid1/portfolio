@@ -11,5 +11,7 @@ Visit my portfolio here. https://vkings1.github.io
 <span><img src="img/screenshoots/elmer.PNG" width="950" height="450" ></span>
 
 <p>Mobile device</p>
-<span><img src="img/screenshoots/elmer1.png" width="750" height="550" ></span>
+<span><img src="img/screenshoots/elmer1.png" width="550" height="750" ></span>
+
+<p>Copyright &copy 2019 Elmer T. Alluad Jr. | All Rights Reserved.</p>
 
