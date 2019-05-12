@@ -7,5 +7,9 @@
 
 Visit my portfolio here. https://vkings1.github.io
 
-<span><img src="img/screenshoots/elmer.PNG" width="550" height="550" ></span>
+<p>Desktop device</p>
+<span><img src="img/screenshoots/elmer.PNG" width="850" height="550" ></span>
+
+<p>Mobile device</p>
+<span><img src="img/screenshoots/elmer1.PNG" width="750" height="550" ></span>
 
