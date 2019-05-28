@@ -376,7 +376,7 @@ footer .myfooter a:hover > i {
 }
 
 #return-to-top i {
-  color: #fff;
+  color: #2196f3;
   margin: 0;
   position: relative;
   left: 16px;
@@ -407,6 +407,49 @@ footer .myfooter a:hover > i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+img.newlogo {
+  position: absolute;
+  height: 250px;
+  left: 20px;
+  bottom: 50px;
+  opacity: 0;
+  -webkit-animation: newlogo;
+          animation: newlogo;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 900px) {
+  img.newlogo {
+    height: 150px;
+    position: relative;
+    left: 5%;
+    top: 50px;
+  }
+}
+
+@-webkit-keyframes newlogo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes newlogo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .wrap-all-the-section {
@@ -555,10 +598,13 @@ footer .myfooter a:hover > i {
   }
 }
 
-@media (max-width: 792px) {
+@media (max-width: 1050px) {
   .center-me {
     font-size: 15px;
     line-height: 1.6em;
+  }
+  .logo-animation img {
+    display: none;
   }
 }
 
@@ -651,6 +697,15 @@ footer .myfooter a:hover > i {
 #specialties {
   background-color: #c0dbf6;
   padding-bottom: 50px;
+}
+
+.container {
+  padding-top: 30px;
+}
+
+.container img {
+  height: 90px;
+  padding: 15px;
 }
 
 .mySpecialties {
@@ -1127,14 +1182,5 @@ footer .myfooter a:hover > i {
 
 .my-email .my-email-contact {
   font-size: 25px;
-}
-
-/* Set the size of the div element that contains the map */
-#map {
-  height: 400px;
-  /* The height is 400 pixels */
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
 }
 /*# sourceMappingURL=app.css.map */

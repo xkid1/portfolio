@@ -19,6 +19,37 @@
     display: flex;
 }
 
+img.newlogo {
+    position: absolute;
+    height: 250px;
+    left: 20px;
+    bottom: 50px;
+    opacity: 0;
+    animation: newlogo;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    // display: flex;
+}
+
+@media screen and (max-width: 900px){ 
+    img.newlogo{
+        height: 150px;
+        position: relative;
+        left: 5%;
+        top: 50px;
+    }
+}
+
+@keyframes newlogo{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 .wrap-all-the-section{
     margin: auto;
 }
@@ -105,10 +136,14 @@
         transform: translateY(20px);
     }
 }
-@media (max-width: 792px){
+@media (max-width: 1050px){
     .center-me{
         font-size: 15px;
         line-height: 1.6em;
+    }
+
+    .logo-animation img{
+        display: none;
     }
 }
 /* end of the style of first sectio */
@@ -195,6 +230,14 @@
     padding-bottom: 50px;
    
 }
+.container {
+    padding-top: 30px;
+    img{
+        height: 90px;
+        padding: 15px;
+    }
+}
+
 .mySpecialties{
     padding-top: 10px;
     text-align: center;
@@ -633,10 +676,3 @@
     // bottom: 7px;
 }
 
- /* Set the size of the div element that contains the map */
- #map {
-    height: 400px;  /* The height is 400 pixels */
-      margin-left: auto;
-      margin-right: auto;
-      width: 80%;
-   }
