@@ -97,6 +97,7 @@
     //   $('.linux').animate({width: '92%'}, 2000);
     //   $('.lamp').animate({width: '90%'}, 2000);
 
+
 })(jQuery); // End of use strict
 
 
@@ -115,7 +116,6 @@ document.onreadystatechange = function () {
 }; //end of the loader of the page
 
 
-// animateCSS('.my-element', 'bounce')
 
 // scroll reveal when the user is scroll down
 ScrollReveal().reveal('.about-me', {
@@ -152,6 +152,13 @@ ScrollReveal().reveal('#specialties-3', {
   distance: '50px',
   origin: 'bottom'
 }, 2000);
+
+ScrollReveal().reveal('.proglogo', {
+  delay: 2000,
+  distance: '50px',
+  origin: 'bottom'
+}, 2000);
+
 
 ScrollReveal().reveal('.my-portfolio', {
   origin: 'bottom',

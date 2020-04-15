@@ -86,7 +86,7 @@
 footer {
   background: #262626;
   width: 100%;
-  height: 100x;
+  height: 100%;
 }
 
 footer .footlogo img {
@@ -99,6 +99,11 @@ footer .footlogo {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  padding: 20px;
+}
+
+footer .myfooter {
+  padding: 10xp;
 }
 
 footer .myfooter-name {
@@ -120,6 +125,7 @@ footer .myfooter ul {
   padding-top: 10px;
   list-style: none;
   text-align: center;
+  padding: 20px;
 }
 
 footer .myfooter ul li {
@@ -273,7 +279,7 @@ body {
 footer {
   background: #262626;
   width: 100%;
-  height: 100x;
+  height: 100%;
 }
 
 footer .footlogo img {
@@ -286,6 +292,11 @@ footer .footlogo {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  padding: 20px;
+}
+
+footer .myfooter {
+  padding: 10xp;
 }
 
 footer .myfooter-name {
@@ -307,6 +318,7 @@ footer .myfooter ul {
   padding-top: 10px;
   list-style: none;
   text-align: center;
+  padding: 20px;
 }
 
 footer .myfooter ul li {
@@ -701,6 +713,7 @@ img.newlogo {
 
 .container {
   padding-top: 30px;
+  padding-left: 60px;
 }
 
 .container img {
@@ -1182,5 +1195,37 @@ img.newlogo {
 
 .my-email .my-email-contact {
   font-size: 25px;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+/* vedio sample  */
+.my-demo {
+  text-align: center;
+  padding: 20px;
+}
+
+.my-demo .sampledemo {
+  width: 100%;
+  height: auto;
+}
+
+.my-demo .fa {
+  padding: 25px;
+  border-radius: 50%;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+.my-demo h1 {
+  margin: 20px 0;
 }
 /*# sourceMappingURL=app.css.map */
