@@ -1,4 +1,5 @@
 @import"./variables";
+@import"./cursor";
 @import"./header";
 @import"./footer";
 @import"./body";
@@ -7,6 +8,18 @@
 @import"./footer";
 @import"./variables";
 @import"./scrolltop";
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    &,
+    * {
+        cursor: none;  
+        box-sizing: border-box;      
+    }
+}
 
 #firstSection{
     height: 100vh;

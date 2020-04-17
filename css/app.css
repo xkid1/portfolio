@@ -1,3 +1,32 @@
+.cursor-dot,
+.cursor-dot-outline {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  z-index: 99999;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #2196f3;
+}
+
+.cursor-dot-outline {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(89, 176, 246, 0.5);
+}
+
 .logo img {
   margin: 10px 30px;
   height: 80px;
@@ -187,7 +216,7 @@ body {
   height: 100%;
   position: fixed;
   z-index: 9999;
-  background: url("/img/gif/126.gif") no-repeat center center rgba(0, 0, 0, 0.25);
+  background: url("/img/gif/loader.gif") no-repeat center center rgba(0, 0, 0, 0.25);
   background-color: #fff;
 }
 
@@ -408,6 +437,21 @@ footer .myfooter a:hover > i {
 }
 
 /* end of scroll to top */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+html *,
+body,
+body * {
+  cursor: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 #firstSection {
   height: 100vh;
   width: 100%;
