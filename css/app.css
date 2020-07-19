@@ -1188,8 +1188,18 @@ img.newlogo {
           box-shadow: 2px 0 2px #555;
 }
 
-.git, .html, .css, .javascript, .php,
-.bootstrap, .jquery, .c-sharp, .vb, .sql, .linux, .lamp {
+.git,
+.html,
+.css,
+.javascript,
+.php,
+.bootstrap,
+.jquery,
+.c-sharp,
+.vb,
+.sql,
+.linux,
+.lamp {
   background: #3d3d3d;
 }
 
